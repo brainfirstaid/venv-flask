@@ -1,0 +1,19 @@
+Inside the code path, run the following commands:
+
+    #install virtualenv using pip3
+	pip3 install virtualenv
+
+	#create a virtual environment (will create folder)
+	python3 -m virtualenv {name}
+	eg: python3 -m virtualenv venv
+
+	#Active virtual environment
+	source {virtualenv name}/bin/activate
+	eg: source venv/bin/activate
+
+	#Install Python packages with pip
+	pip install -r requirements.txt
+
+    #run flask server
+    flask run --host={host} --port={port}
+    eg: flask run --host=0.0.0.0 --port=5000
